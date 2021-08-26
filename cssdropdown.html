@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>handy-HTML.com - Create a simple CSS dropdown menu</title>
+<style type="text/css">
+ul {
+    font-family: Arial, Verdana;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+ul li {
+    display: block;
+    position: relative;
+    float: left;
+}
+li ul {
+    display: none;
+}
+ul li a {
+    display: block;
+    text-decoration: none;
+    color: #ffffff;
+    border-top: 1px solid #ffffff;
+    padding: 5px 15px 5px 15px;
+    background: #1e7c9a;
+    margin-left: 1px;
+    white-space: nowrap;
+}
+ul li a:hover {
+background: #3b3b3b;
+}
+li:hover ul {
+    display: block;
+    position: absolute;
+}
+li:hover li {
+    float: none;
+    font-size: 11px;
+}
+li:hover a { background: #3b3b3b; }
+li:hover li a:hover {
+    background: #1e7c9a;
+}
+
+</style>
+
+</head>
+
+<body>
+
+
+<ul id="menu">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Portafolio</a>
+        <ul>
+            <li><a href="#">Web Design</a></li>
+            <li><a href="#">Graphic Design</a></li>
+            <li><a href="#">Logo Design</a></li>
+            <li><a href="#">Blog Design</a></li>
+        </ul>
+    </li>
+    <li><a href="#">Projects</a>
+        <ul>
+            <li><a href="#">This is a project</a></li>
+            <li><a href="#">So is this</a></li>
+            <li><a href="#">and this</a></li>
+            <li><a href="#">don't forget this too</a></li>
+        </ul>
+    </li>
+    <li><a href="#">Contact</a>
+        <ul>
+            <li><a href="#">Support</a></li>
+            <li><a href="#">Quote</a></li>
+            <li><a href="#">General Enquiry</a></li>
+        </ul>
+    </li>
+</ul>
+
+
+</body>
+</html>
